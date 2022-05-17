@@ -6,15 +6,15 @@
           <td>
             <h4>天色已晚<br />你回到现实<br />你手心里有一朵花<br /></h4>
             <h2>你带走它的理由是？</h2>
-            <input type="radio" name="q4" />A.和喜欢的人讲这次旅程<br />
-            <input type="radio" name="q4" />B.用心的珍藏起来<br />
+            <input type="radio" name="q4" @click="changeA"/>A.和喜欢的人讲这次旅程<br />
+            <input type="radio" name="q4" @click="changeB"/>B.用心的珍藏起来<br />
           </td>
         </tr>
 
         <router-link :to="{
           path:'/AnswerPage',
           query:{
-            answer:$route.query.answer
+            answer:answer
           }}"><tr>
           <td>
             <input type="submit" value="继续探索" id="button" />
@@ -28,7 +28,21 @@
 
 <script>
 export default {
-    name:'FourthIndex'
+    name:'FourthIndex',
+     data(){
+      return{
+        answer:this.$route.query.answer
+      }
+    },
+     methods:{
+    changeA(){
+      alert(this.answer)
+      this.answer = this.answer + 'A'
+    },
+    changeB(){
+      this.answer = this.answer + 'B'
+    }
+  }
 }
 </script>
 
