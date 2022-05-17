@@ -4,6 +4,13 @@ import SecondIndex from '../components/secondIndex.vue'
 import ThirdIndex from '../components/thirdIndex.vue'
 import FourthIndex from '../components/fourthIndex.vue'
 import AnswerPage from '../components/answerPage.vue'
+import LieBao from '../view/LieBao.vue'
+import HaiTun from '../view/HaiTun.vue'
+import HuoLong from '../view/HuoLong.vue'
+import KaoLa from '../view/KaoLa.vue'
+import HaiXing from '../view/HaiXing.vue'
+import MaoMi from '../view/MaoMi.vue'
+
 const router = new VueRouter({
     mode: 'history',
     routes:[
@@ -31,7 +38,32 @@ const router = new VueRouter({
         {
             path:'/AnswerPage',
             component:AnswerPage
-        }
+        },
+        {
+            path:'/LieBao',
+            component:LieBao
+        },
+        {
+            path:'/HaiTun',
+            component:HaiTun
+        },
+        {
+            path:'/MaoMi',
+            component:MaoMi
+        },
+        {
+            path:'/HaiXing',
+            component:HaiXing
+        },
+        {
+            path:'/HuoLong',
+            component:HuoLong
+        },
+        {
+            path:'/KaoLa',
+            component:KaoLa
+        },
+        
     ]
   })
   
