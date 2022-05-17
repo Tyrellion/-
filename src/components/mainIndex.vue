@@ -10,6 +10,7 @@
             <h2>你希望这段旅程</h2>
             <br /><input type="radio" name="q1" @click.once="changeA"/>A.跟着蝴蝶的指引<br />
             <input type="radio" name="q1" @click.once="changeB" />B.自由自在的游玩<br />
+            
           </td>
         </tr>
         
@@ -19,7 +20,7 @@
             answer:answer
           }}"><tr>
           <td>
-            <input type="submit" value="继续探索" id="button" />
+            <el-row> <el-button type="success" style="color:#006400" plain>继续探索</el-button></el-row>
           </td>
         </tr></router-link>
         <router-view></router-view>

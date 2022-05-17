@@ -17,7 +17,8 @@
             answer:answer
           }}"><tr>
           <td>
-            <input type="submit" value="继续探索" id="button" />
+                        <el-row> <el-button type="success" style="color:#006400" plain>继续探索</el-button></el-row>
+
           </td>
         </tr></router-link>
         <router-view></router-view>
