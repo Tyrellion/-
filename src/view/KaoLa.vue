@@ -7,6 +7,14 @@
 自身优势: 你有奥特曼的正义感，能像相信光一样相信你！<br>
 想要严道自律地走向成功？你就是参考答案！
 </h1>
+<router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
  </div> 
 </template>
 

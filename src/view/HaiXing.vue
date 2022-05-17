@@ -7,6 +7,14 @@
 自身优势：机智使你最大的加分项，好看不过是锦上添花！<br>
 你轻松计算最优解，人生游戏，你是开挂的存在
 </h1>
+<router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
   </div>
 </template>
 

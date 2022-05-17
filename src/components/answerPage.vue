@@ -117,7 +117,7 @@
         this.else.length === 4
       "
     >
-      <h1 style="color: #006400">还有旅程没有体验哦</h1>
+      <h1 style="color: #006400;font-size:80px">还有旅程没有体验哦!</h1>
     </div>
     <router-link to="/MainIndex">
       <tr>

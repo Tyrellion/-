@@ -7,6 +7,14 @@
 自身优势：温和舒适，和你聊天就像泡温泉般舒心！<br>
 极浪漫，和你聊天，就像还原19世纪沙龙聚合！
 </h1>
+<router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
   </div>
 </template>
 

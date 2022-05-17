@@ -7,6 +7,14 @@
 自身优势：你从不盲目崇拜，你身在哪里，哪里便是艺术家云集的旧金山！<br>
 你活在当下，破规则，不流俗的勇气令人激赏！
 </h1>
+<router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
  </div> 
 </template>
 

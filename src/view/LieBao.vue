@@ -7,6 +7,14 @@
 自身优势：你是最佳的leader，有磁石般的凝聚力和一贯的高标准<br>
 你是完美主义，将带领同伴奔向更开阔的高地<br>
 </h1>
+ <router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
   </div>
 </template>
 

@@ -7,6 +7,14 @@
 自身优势：循规蹈矩是你的大忌，你有灵气且不按套路出牌！<br>
 和你做朋友感觉像和一群人做朋友，赚大了！
 </h1>
+<router-link to="/MainIndex"><el-row>
+            <el-button
+              
+              type="success"
+              style="color: #006400"
+              plain
+              >重新探索</el-button
+            ></el-row></router-link>
  </div> 
 </template>
 
