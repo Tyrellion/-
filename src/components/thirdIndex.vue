@@ -37,7 +37,7 @@ export default {
     },
      methods:{
     changeA(){
-      alert(this.answer)
+      //alert(this.answer)
       this.answer = this.answer + 'A'
     },
     changeB(){
