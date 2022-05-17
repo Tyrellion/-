@@ -7,12 +7,25 @@
        <div v-if="$route.query.answer === '0ABBA'||$route.query.answer === '0BBBA'">发呆也要专心的考拉</div>
        <div v-if="$route.query.answer === '0BBBB'||$route.query.answer === '0ABBB'">枕着星河入梦的海豚</div>
        <div v-if="$route.query.answer === '0BBBB'||$route.query.answer === '0ABBB'">枕着星河入梦的海豚</div>
+       <div v-if="this.else.length === 1||this.else.length === 2||this.else.length === 3||this.else.length === 4 "><h2>还有旅程没有体验哦</h2></div>
+       <router-link to="/MainIndex">
+         <tr>
+          <td>
+            <input type="submit" value="重新探索" id="button" />
+          </td>
+        </tr>
+       </router-link>
   </div>
 </template>
 
 <script>
 export default {
-    name:'AnswerPage'
+    name:'AnswerPage',
+    data(){
+      return{
+        else:this.$route.query.answer 
+      }
+    }
 }
 </script>
 
