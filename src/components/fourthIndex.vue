@@ -6,8 +6,8 @@
           <td>
             <h4>天色已晚<br />你回到现实<br />你手心里有一朵花<br /></h4>
             <h2>你带走它的理由是？</h2>
-            <input type="radio" name="q4" @click="changeA"/>A.和喜欢的人讲这次旅程<br />
-            <input type="radio" name="q4" @click="changeB"/>B.用心的珍藏起来<br />
+            <input type="radio" name="q4" @click.once="changeA"/>A.和喜欢的人讲这次旅程<br />
+            <input type="radio" name="q4" @click.once="changeB"/>B.用心的珍藏起来<br />
           </td>
         </tr>
 
@@ -37,9 +37,11 @@ export default {
      methods:{
     changeA(){
       //alert(this.answer)
+      this.answer = this.$route.query.answer
       this.answer = this.answer + 'A'
     },
     changeB(){
+      this.answer = this.$route.query.answer
       this.answer = this.answer + 'B'
     }
   }

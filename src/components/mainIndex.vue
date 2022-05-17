@@ -8,8 +8,8 @@
           <td>
             <h4>你来到了爪哇国的动物森林<br />看到一个奇妙的世界</h4>
             <h2>你希望这段旅程</h2>
-            <br /><input type="radio" name="q1" @click="changeA"/>A.跟着蝴蝶的指引<br />
-            <input type="radio" name="q1" @click="changeB"/>B.自由自在的游玩<br />
+            <br /><input type="radio" name="q1" @click.once="changeA"/>A.跟着蝴蝶的指引<br />
+            <input type="radio" name="q1" @click.once="changeB" />B.自由自在的游玩<br />
           </td>
         </tr>
         
@@ -38,9 +38,11 @@ export default {
   },
   methods:{
     changeA(){
+      this.answer='0'
       this.answer = this.answer + 'A'
     },
     changeB(){
+      this.answer='0'
       this.answer = this.answer + 'B'
     }
   }

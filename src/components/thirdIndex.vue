@@ -6,8 +6,8 @@
           <td>
             <h4>你继续探索<br />发现动物们正在聊天</h4>
             <h2>你想加入哪个讨论</h2>
-            <input type="radio" name="q3" @click="changeA"/>A.动物森林的社会系统<br />
-            <input type="radio" name="q3" @click="changeB"/>B.动物森林的有趣故事<br />
+            <input type="radio" name="q3" @click.once="changeA"/>A.动物森林的社会系统<br />
+            <input type="radio" name="q3" @click.once="changeB"/>B.动物森林的有趣故事<br />
           </td>
         </tr>
        
@@ -38,9 +38,11 @@ export default {
      methods:{
     changeA(){
       //alert(this.answer)
+      this.answer = this.$route.query.answer
       this.answer = this.answer + 'A'
     },
     changeB(){
+      this.answer = this.$route.query.answer
       this.answer = this.answer + 'B'
     }
   }
