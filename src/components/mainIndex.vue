@@ -20,7 +20,7 @@
             answer:answer
           }}"><tr>
           <td>
-            <el-row> <el-button type="success" style="color:#006400" plain>继续探索</el-button></el-row>
+            <el-row> <el-button type="success" style="color:black" plain>继续探索</el-button></el-row>
           </td>
         </tr></router-link>
         <router-view></router-view>
@@ -51,11 +51,11 @@ export default {
 </script>
 
 <style>
-body {
-  background: darkgrey;
+body{
+  background-color: #e1f3d8;
 }
 div {
-  background: darkgrey;
+  background-color: #e1f3d8;
   width: 1500px;
   padding: 15px;
   border: none;
