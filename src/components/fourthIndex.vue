@@ -24,6 +24,8 @@
         <router-view></router-view>
       </table>
     </form>
+    <div class="bear"></div>
+
   </div>
 </template>
 

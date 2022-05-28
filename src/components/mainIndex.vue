@@ -26,6 +26,9 @@
         <router-view></router-view>
       </table>
     </form>
+
+
+    <div class="bear"></div>
   </div>
 </template>
 
@@ -51,6 +54,33 @@ export default {
 </script>
 
 <style>
+.bear{
+  position: absolute;
+   width: 170px;
+            height: 100px;
+            background: url(../picture/bear.png) no-repeat;
+            /* 我们元素可以添加多个动画， 用逗号分隔 */
+            animation: bear .4s steps(8) infinite, move 3s forwards;
+}
+ @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 50%;
+                /* margin-left: -100px; */
+                transform: translateX(-50%);
+            }
+        }
 body{
   background-color: #e1f3d8;
 }
